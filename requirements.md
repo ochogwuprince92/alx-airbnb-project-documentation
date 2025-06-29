@@ -31,9 +31,6 @@ Role must be one of: guest, host.
 
 Output:
 
-json
-Copy
-Edit
 {
   "message": "User registered successfully",
   "token": "<JWT_TOKEN>",
@@ -48,18 +45,12 @@ Description: Authenticate user and issue JWT token.
 
 Input:
 
-json
-Copy
-Edit
 {
   "email": "user@example.com",
   "password": "securePassword123"
 }
 Output:
 
-json
-Copy
-Edit
 {
   "token": "<JWT_TOKEN>",
   "user": {
@@ -85,9 +76,6 @@ Description: Create a new property listing.
 
 Input:
 
-json
-Copy
-Edit
 {
   "title": "2-Bedroom Apartment in Lagos",
   "description": "A comfortable space near the beach.",
@@ -107,9 +95,6 @@ Dates must be future and valid range.
 
 Output:
 
-json
-Copy
-Edit
 {
   "message": "Property created successfully",
   "property_id": 101
@@ -139,9 +124,6 @@ Description: Book a property for selected dates.
 
 Input:
 
-json
-Copy
-Edit
 {
   "property_id": 101,
   "check_in": "2025-08-01",
@@ -155,9 +137,6 @@ No existing bookings must conflict with selected dates.
 
 Output:
 
-json
-Copy
-Edit
 {
   "message": "Booking request submitted",
   "booking_id": 55,
